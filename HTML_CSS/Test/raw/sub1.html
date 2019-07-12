@@ -28,9 +28,13 @@
             width:200px;
             
         }
+        .list li a{
+            width:150px;
+        }
         .list a:hover{
-            background-color:green;
+            background-color:yellow;
             border-radius:2px;
+
         }
         .list a:link{
             color: black;
@@ -46,14 +50,45 @@
             text-align:left;
             width: 150px;
             height:200px;
-            
+        
             
 
         }
-        .li{
+        .list li{
+            width: 150px;
             margin-bottom: 5px;
+            border: 1px solid black;
+            border-radius: 3px;
+            
         }
-        
+        .current{
+            background-color:green;
+        }
+        .side1{
+            width:300px;
+            
+        }
+
+        .subside1{
+            background-color:skyblue;
+            margin-bottom:0px;
+            color:white;
+            height:250px;
+        }
+        .subside2{
+            background-color:skyblue;
+            margin-top:0px;
+            color:white;
+            height:250px;
+        }
+        .main{
+            width:40%;
+            
+        }
+        th{
+            background-color: green;
+            color:white;
+        }
         
     
     </style>
@@ -66,20 +101,26 @@
 <p>Go to <a>raw/stylesheetNo.html</a></p>
 <span class="uldiv">
 <ul class="list">
-    <li class="li"><a href = "sub2.html">Stylesheet 1</a></li>
-    <li class="li"><a href = "sub3.html">Stylesheet 2</a></li>
-    <li class="li"><a href = "sub4.html">Stylesheet 3</a></li>
-    <li class="li"><a href = "sub5.html">Stylesheet 4</a></li>
-    <li class="li"><a href = "sub1.html">No StyleSheet</a></li>
+    <li><a href = "sub2.html">Stylesheet 1</a></li>
+    <li><a href = "sub3.html">Stylesheet 2</a></li>
+    <li><a href = "sub4.html">Stylesheet 3</a></li>
+    <li><a href = "sub5.html">Stylesheet 4</a></li>
+    <li class="current"><a href = "sub1.html">No StyleSheet</a></li>
 </ul>
 </span>
-<span>
+<div class="main">
 <h1> Same Page Different Stylesheets</h1>
 <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. you can change the layout of this page by selecting different stylesheets in the menu,
     or by selecting one of the following links: <a href="sub2.html">Stylesheet 1</a>,<a href="sub3.html">Stylesheet 2</a>,<a href="sub4.html">Stylesheet 3</a>,
     <a href="sub5.html">Stylesheet 4</a>,<a href="sub1.html">No Stylesheet</a>.
 </p>
-</span>
+</div>
+<div class="side1">
+<p class="subside1">Side-Bar</p>
+<p class="subside2">it's sideBar</p>
+</div>
+
+
 
 
 <h2>Table</h2>
